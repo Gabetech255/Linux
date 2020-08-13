@@ -1,0 +1,24 @@
+# Install minicom
+
+ apt-get install minicom
+
+# Check serial port
+
+ dmesg | grep tty
+
+# Configure minicom
+
+ minicom -s
+
+ - Press A to change
+   serial device
+ - Press Enter
+ - Press E to change Bps/Par/Bits
+ - Press C and Q
+ - Press Enter
+
+ - Save configuration
+
+# Connect to cisco switch/router
+
+ minicom cisco
