@@ -10,6 +10,12 @@ if {ifconfig -a | grep "ip = 192.168.2.6"
       
       
       
+      #add "origin=Raspbian,codename=${distro_codename},label=Raspbian";
+        "origin=Raspberry Pi Foundation,codename{distro_codename},label=Raspberry Pi Foundation";
+        to /etc/apt/apt.conf.d/50unattended-upgrades - insert into origin section. 
+      
+      
+      
       
       }
       
