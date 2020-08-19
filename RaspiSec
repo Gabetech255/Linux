@@ -1,0 +1,15 @@
+#this is a short run of what to enable and disable to make your pi secure
+
+!#bin/bash
+
+if {ifconfig -a | grep "ip = 192.168.2.6"
+
+  then: 
+      #Lets update the repos and upgrade
+      sudo apt-get update -y && sudo apt upgrade -y
+      
+      
+      
+      
+      }
+      
