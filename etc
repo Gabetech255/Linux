@@ -1,0 +1,2 @@
+#add ppa respository 
+sudo add-apt-repository ppa:<ppa_name>
