@@ -1,2 +1,3 @@
+#Make sure software properties common pkg is installed sudo apt-get install software-properties-common
 #add ppa respository 
 sudo add-apt-repository ppa:<ppa_name>
