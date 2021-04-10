@@ -6,6 +6,13 @@
 #sudo iptables -A INPUT -p tcp -m tcp --dport 53 -j DROP
 #sudo /sbin/iptables-save
 
+#AWS servers
+  #Block ICMP traffic 
+iptables -A OUTPUT -p icmp -o eth0 -j ACCEPT          
+iptables -A INPUT -p icmp --icmp-type echo-reply -s 0/0 -i eth0 -j ACCEPT     
+iptables -A INPUT -p icmp --icmp-type destination-unreachable -s 0/0 -i eth0 -j ACCEPT  
+iptables -A INPUT -p icmp --icmp-type time-exceeded -s 0/0 -i eth0 -j ACCEPT       
+iptables -A INPUT -p icmp -i eth0 -j DROP   
 
 
 #Incoming Rules
