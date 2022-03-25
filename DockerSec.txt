@@ -1,0 +1,18 @@
+
+DOCKER
+
+-Always run containers as an NON-ROOT user. This is to prevent privilage escalation attacks
+.  
+- tAKE HOST SECURITY TO THE CANTAINER LEVEL AND SECURE THE USER ACCESS TO THE ROOT SHELL. 
+check when you login to the container make sure you dont automatically come in as root..
+
+#FROM ubuntu 20.01
+LABEL maintainer="Access_1"
+
+RUN  groupadd -r access1 && useradd -r -g access1 passwrd
+Enviromental var
+
+ENV HOME home/Acc1/
+ENV DEBIAN_FRONTEND=NONINTERACTIVE 
+
+
