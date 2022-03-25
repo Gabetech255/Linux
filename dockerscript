@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#yum for AMS linux AMI
+sudo apt-get update 
+sudo apt upgrade 
+
+sudo apt install docker.io
+echo "CURRENT DOCKER VERION:" > LOG_Install.txt
+sudo docker --version >> LOG_Install.txt
+
+echo "Script Complete"
