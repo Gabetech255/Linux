@@ -1,0 +1,5 @@
+From python:lastest
+
+COPY . /app
+
+CMD ./Alpha_Alpine.sh
